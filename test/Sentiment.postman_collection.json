@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "b7c07924-bd7f-427e-bfdb-e0556ccf8521",
+		"name": "Sentiment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "heroku_vader_v1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"sentence\": \"God gives us dreams at night so that we can turn them into reality during the day. So have faith and move ahead.\",\r\n    \"emotion\": \"\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ml-sentiment-api.herokuapp.com/api/v1/resources/sentiment/vader",
+					"protocol": "https",
+					"host": [
+						"ml-sentiment-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"resources",
+						"sentiment",
+						"vader"
+					],
+					"query": [
+						{
+							"key": "sentence",
+							"value": "test",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroku_vader_v2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"sentence\": \"God gives us dreams at night so that we can turn them into reality during the day. So have faith and move ahead.\",\r\n    \"emotion\": \"\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ml-sentiment-api.herokuapp.com/api/v1/resources/sentiment/vader",
+					"protocol": "https",
+					"host": [
+						"ml-sentiment-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"resources",
+						"sentiment",
+						"vader"
+					],
+					"query": [
+						{
+							"key": "sentence",
+							"value": "test",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroku_tw",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"sentence\": \"God gives us dreams at night so that we can turn them into reality during the day. So have faith and move ahead.\",\r\n    \"emotion\": \"\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ml-sentiment-api.herokuapp.com/api/v1/resources/sentiment/vader",
+					"protocol": "https",
+					"host": [
+						"ml-sentiment-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"resources",
+						"sentiment",
+						"vader"
+					],
+					"query": [
+						{
+							"key": "sentence",
+							"value": "test",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroku_mo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"sentence\": \"God gives us dreams at night so that we can turn them into reality during the day. So have faith and move ahead.\",\r\n    \"emotion\": \"\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ml-sentiment-api.herokuapp.com/api/v1/resources/sentiment/vader",
+					"protocol": "https",
+					"host": [
+						"ml-sentiment-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"resources",
+						"sentiment",
+						"vader"
+					],
+					"query": [
+						{
+							"key": "sentence",
+							"value": "test",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/v1/resources/sentiment/vader",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"sentence\": \"I like you\",\r\n    \"emotion\": \"\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/resources/sentiment/vader",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"resources",
+						"sentiment",
+						"vader"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
